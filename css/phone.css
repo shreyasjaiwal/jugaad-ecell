@@ -1,0 +1,78 @@
+.img{
+    display: none;
+}
+
+.home-content h1{
+    font-size: 4rem;
+}
+
+.home-content p{
+    font-size: 1rem;
+}
+
+#home hr{
+    margin: 10px auto;
+    width: 80%;
+}
+#home{
+    display: flex;
+    height: 100vh;
+    margin-top: -80px;
+    
+}
+
+/* about */
+
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 20px;
+    padding: 10px;
+}
+
+.title{
+    font-size: 2rem;
+}
+
+.title p{
+    display: inline;
+    color: white;
+}
+
+.about-content{
+    margin: 10px;
+    /* text-align: center; */
+    text-align: justify;
+    font-size: 8px;
+}
+
+
+/*registration*/
+#checkbox{
+    margin: 4px;
+}
+#exampleFormControlInput1{
+    width: 70vw;
+    /* text-align: center; */
+    margin-left: 0px;
+}
+#exampleFormControlInput2{
+    width: 70vw;
+}
+
+
+/* sponsor */
+#sponsor {
+    flex-wrap: wrap;
+    margin-bottom: 45px;
+}
+
+
+#sponsor img {
+    height: 100px;
+}
+.disclaimer{
+    font-size: 5px;
+}
