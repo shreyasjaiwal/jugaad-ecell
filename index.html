@@ -17,7 +17,7 @@
       />
 </head>
 
-<body style="background: radial-gradient(circle at 22.4% 21.7%, rgb(4, 189, 228) 0%, rgb(2, 83, 185) 100.2%);">
+<body style="background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(228, 136, 249) 35.7%, rgba(80,28,169,1) 83.6% );">
     <!-- <video autoplay muted loop id="myVideo">
         <source src="./Dollars Money Falling Free Background Animation Loop footage Motion Graphic Video VFX_1.mp4" type="video/mp4">
     </video> -->
@@ -72,16 +72,21 @@
         
 
         <div class="home-content">
-            <h1 class="animate__animated animate__fadeIn fw-bolder">JUGAAD</h1>
+            <!-- <h1 class="animate__animated animate__fadeIn fw-bolder">JUGAAD</h1> -->
+            <img src="./img/jugaad final black.png" alt="" class="logo animate__animated animate__slideInDown">
+            <div class="content animate__animated animate__slideInUp">
+                <p class="fw-bold">How much you can make with <span> &#8377 100</span>!!</p>
 
-            <p class="fw-bold">How much you can make with 100 bucks !!</p>
-
-            <div class="d-grid gap-2 col-5 mx-auto">
-                <button type="button" class="btn btn-outline-dark fw-semibold">Register Now</button>
-                <button type="button" class="btn btn-outline-dark fw-semibold">Score-Board</button>
+                <div class="d-grid gap-2 col-5 mx-auto">
+                    <button type="button" class="btn btn-outline-dark fw-semibold " style="background-color:#6e1ca9;">Register Now</button>
+                    
+                    <!-- <button type="button" class="btn btn-outline-dark fw-semibold">Score-Board</button> -->
+                </div> 
+                
+                <hr>
+                <h2 class="fw-bold" >On 24 Sep 2022 </h2>
             </div>
-            <hr>
-            <h2 class="fw-bold" >On 24 Sep 2022 </h2>
+           
 
         </div>
 
@@ -92,14 +97,16 @@
     </div>
 
     <!-- about-section  -->
-
-    <div class="about" id="about">
+<div class="about-section">
+    <div class="about animate__animated animate__fadeInLeftBig animate__slower" id="about" style=" color: white;">
         <div class="title fw-bold">About <p>Jugaad</p>
         </div>
-        <div class="about-content w-75 fw-normal fs-4">Jugaad by The Entrepreneurship Cell, VNIT Nagpur is an annual event which aims mainly at the development of skills like money multiplication, management, creative ideation, bargaining and what not. It is an event that will thoroughly challenge even the best entrepreneurial minds out there and force everyone to think out of the box. Jugaad is a must for those who wish to expand their horizon of knowledge into the real world and get a glimpse of what it's like to (ek word bacha hai bas)
+        <div class="about-content w-75 fw-normal fs-4"><p>Jugaad by The Entrepreneurship Cell, VNIT Nagpur is an annual event which aims mainly at the development of skills like money multiplication, management, creative ideation, bargaining and what not. It is an event that will thoroughly challenge even the best entrepreneurial minds out there and force everyone to think out of the box. Jugaad is a must for those who wish to expand their horizon of knowledge into the real world and get a glimpse of what it's like to do a Jugaad</p>
             </div>
 
     </div>
+</div>
+   
 
     <!-- registration-section -->
 
@@ -113,31 +120,31 @@
         </p>
 
         <div class="mb-3 exform">
-            <input type="email" class="form-control light" id="exampleFormControlInput1" placeholder="Team Name">
+            <input type="email" class="form-control light "  id="exampleFormControlInput1" placeholder="Team Name">
         </div>
 
 
-        <select class="form-select exform" aria-label="Default select example" id="exampleFormControlInput2 teamSelector">
-            <option selected>Team Size</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-            <option value="4">Four</option>
+        <select class="form-select exform " aria-label="Default select example" id="exampleFormControlInput2" >
+            <option selected id="selected">Team Size</option>
+            <option value="1" id="selected1">One</option>
+            <option value="2" id="selected2">Two</option>
+            <option value="3" id="selected3">Three</option>
+            <option value="4" id="selected4">Four</option>
         </select>
         <div id="teamMembers">
             <div class="mb-3 exform">
-                <input type="text" class="form-control " id="exampleFormControlInput1" placeholder="Team Members">
+                <input type="text" class="form-control  "  id="exampleFormControlInput1" placeholder="Team Members">
             </div>
         </div>
         
         <div class="mb-3 exform">
-            <input type="text" class="form-control " id="exampleFormControlInput1" placeholder="Team Leader">
+            <input type="text" class="form-control  "  id="exampleFormControlInput1" placeholder="Team Leader">
         </div>
         <div class="mb-3 exform">
-            <input type="tel" class="form-control " id="exampleFormControlInput1" placeholder="WhatsApp Number">
+            <input type="tel" class="form-control  "  id="exampleFormControlInput1" placeholder="WhatsApp Number">
         </div>
         <div class="mb-3 exform">
-            <input type="text" class="form-control " id="exampleFormControlInput1" placeholder="E-mail Address">
+            <input type="text" class="form-control  "  id="exampleFormControlInput1" placeholder="E-mail Address">
         </div>
 <!-- 
         <div class="form-check" style="margin-top:10px; margin-bottom: 25px;">
