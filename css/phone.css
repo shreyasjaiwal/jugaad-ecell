@@ -9,6 +9,13 @@
 .home-content p{
     font-size: 1rem;
 }
+.content{
+    margin-top: 10px;
+}
+.home-content .logo{
+    margin-top: -100px;
+    margin-bottom: -120px;
+}
 
 #home hr{
     margin: 10px auto;
@@ -39,13 +46,21 @@
 .title p{
     display: inline;
     color: white;
+    
 }
 
-.about-content{
+.about-content {
     margin: 10px;
     /* text-align: center; */
     text-align: justify;
-    font-size: 8px;
+    font-size: 2px;
+}
+.about-content p{
+    font-size: 15px;
+}
+.about-section{
+    margin-top: -200px;
+    height: 80vh;
 }
 
 
