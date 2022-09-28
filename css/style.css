@@ -34,7 +34,7 @@
     font-size: 1.5rem;
 }
 .home-content span{
-    color:#6e1ca9;
+    color: yellow;
 }
 .img{
     margin-top: 50px;
@@ -46,7 +46,9 @@
 .home-content .btn{
     color: white;
 }
-
+.nav-item a:hover{
+    color: purple;
+}
 /* about section  */
 
 .about{
@@ -64,7 +66,7 @@
 
 .title p{
     display: inline;
-    color: white;
+    color: purple;
 }
 
 .about-content{
@@ -73,14 +75,14 @@
 }
 .about-section{
     margin-top: -30px;
-    background-color: #6e1ca9;
-    height: 70vh;
+    background-color: yellow;
+    height: 80vh;
 }
 .about {
     
     --animates-duration: 1.75s;
   }
-  
+
 
 /* registration-section */
 
@@ -183,7 +185,7 @@
       100% { left: 0; }
   } */
   #nav li a:hover{
-    color: white;
+    color:yellow;
   }
   .container-reg input ::placeholder{
     font-style: white;
