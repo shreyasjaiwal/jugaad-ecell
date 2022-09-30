@@ -34,7 +34,7 @@
     font-size: 1.5rem;
 }
 .home-content span{
-    color: yellow;
+    color: #ffe100;
 }
 .img{
     margin-top: 50px;
@@ -49,6 +49,104 @@
 .nav-item a:hover{
     color: purple;
 }
+.btn a{
+    text-decoration: none;
+    color: black;
+}
+.wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Reg {
+    margin-top: 18px;
+    margin-bottom: 24px;
+    min-width: 300px;
+    min-height: 60px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #313133;
+    background: #ffe100;
+  background: #ffe100;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px white;
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    }
+  
+  .Reg::before {
+  content: '';
+    border-radius: 28px;
+    min-width: calc(300px + 12px);
+    min-height: calc(60px + 12px);
+    border: 6px solid #ffe100;
+    box-shadow: 0 0 10px white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+  }
+  
+  .Reg:hover, .Reg:focus {
+    color: #313133;
+    transform: translateY(-6px);
+  }
+  
+  .Reg:hover::before, .Reg:focus::before {
+    opacity: 1;
+  }
+  
+  .Reg::after {
+    content: '';
+    width: 30px; height: 30px;
+    border-radius: 100%;
+    border: 6px solid #ffe100;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+  }
+  
+  .Reg:hover::after, .Reg:focus::after {
+    animation: none;
+    display: none;
+  }
+  .Reg a{
+    text-decoration: none;
+    color: black;
+  }
+  .Reg a:hover{
+    color: white;
+  }
+  .nav-btn a :hover{
+    color: #ffe100;
+  }
+  
+  /* @keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      width: 300px;
+      height: 300px;
+      opacity: 0;
+    }
+  } */
 /* about section  */
 
 .about{
@@ -66,7 +164,7 @@
 
 .title p{
     display: inline;
-    color: purple;
+    color:black;
 }
 
 .about-content{
@@ -75,7 +173,7 @@
 }
 .about-section{
     margin-top: -30px;
-    background-color: yellow;
+    background-color: #ffe100;
     height: 80vh;
 }
 .about {
