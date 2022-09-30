@@ -8,7 +8,10 @@
 
 .home-content p{
     font-size: 20px;
-    margin-top: -50px;
+    margin-top: -20px;
+}
+.reg{
+    width: 50px;
 }
 .content{
     margin-top: 10px;
@@ -19,8 +22,20 @@
     margin-bottom: -120px;
 }
 .Reg{
-    width: 5px;
+    min-width: 100px;
+    min-height: 50px;
 }
+.Reg {
+    font-size: 20px;
+    padding: 10px 15px;
+}
+.Reg::before {
+    content: '';
+      border-radius: 28px;
+      min-width: calc(200px + 8px);
+      min-height: calc(50px + 8px);
+    
+    }
 #home hr{
     margin: 10px auto;
     width: 80%;
@@ -31,10 +46,13 @@
     margin-top: -80px;
     
 }
+.navbar-toggler-icon .navbar-toggler{
+    color: #ffff !important ;
+}
 
 /* about */
 .about-section{
-    padding-bottom: 750px;
+    padding-bottom: 820px;
 }
 .about{
     display: flex;
@@ -47,6 +65,7 @@
 
 .title{
     font-size: 2rem;
+    margin-top: 40px;
 }
 
 .title p{
@@ -66,7 +85,7 @@
 }
 .about-section{
     margin-top: -200px;
-    height: 80vh;
+    height: 90vh;
 }
 
 
