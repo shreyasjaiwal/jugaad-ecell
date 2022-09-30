@@ -7,16 +7,20 @@
 }
 
 .home-content p{
-    font-size: 1rem;
+    font-size: 20px;
+    margin-top: -50px;
 }
 .content{
     margin-top: 10px;
 }
 .home-content .logo{
+    width: 100%;
     margin-top: -100px;
     margin-bottom: -120px;
 }
-
+.Reg{
+    width: 5px;
+}
 #home hr{
     margin: 10px auto;
     width: 80%;
@@ -29,7 +33,9 @@
 }
 
 /* about */
-
+.about-section{
+    padding-bottom: 750px;
+}
 .about{
     display: flex;
     flex-direction: column;
