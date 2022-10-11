@@ -75,7 +75,7 @@
   background: #ffe100;
     border: none;
     border-radius: 20px;
-    box-shadow: 5px 5px 5px white;
+    /* box-shadow: 5px 5px 5px white; */
     transition: all 0.3s ease-in-out 0s;
     cursor: pointer;
     outline: none;
@@ -89,7 +89,7 @@
     min-width: calc(300px + 12px);
     min-height: calc(60px + 12px);
     border: 6px solid #ffe100;
-    box-shadow: 0 0 10px white;
+    /* box-shadow: 0 0 10px white; */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -134,7 +134,22 @@
   .nav-btn a :hover{
     color: #ffe100;
   }
-  
+  .Reg-2{
+    color: #ffe100;
+    font-weight: 600;
+    font-size: 23px;
+    /* background-color: #ffe100; */
+    background-color: transparent;
+    border: 4px solid #ffe100;
+    border-radius: 16px;
+    padding: 5px 10px;
+    letter-spacing: 1.3px;
+    margin-bottom: 7px;
+}
+  .Reg-2:hover{
+    background-color: #ffe100;
+    color:black;
+  }
   /* @keyframes ring {
     0% {
       width: 30px;
@@ -174,23 +189,42 @@
 .about-section{
     margin-top: -30px;
     background-color: #ffe100;
-    height: 80vh;
+    height: 90vh;
 }
 .about {
     
     --animates-duration: 1.75s;
   }
-
+/* teaser video */
+.teaser iframe{
+ 
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 5%;
+  margin-bottom: 25%;
+}
+.prize{
+  height: 60vh;
+  background-color: #ffe100;
+}
+.prize h1{
+  font-size: 70px;
+  padding-left: 20%;
+  padding-top: 5%;
+}
 
 /* registration-section */
 
 .container-reg{
     /* background-color: #ffffff; */
+    /* background-color: #ffe100; */
     text-align: center;
     margin-top: 20px;
     padding: 35px 20px;
 }
-
+/* .container-reg button:hover{
+    color: white;
+} */
 .container-reg .exform {
     width: 78%;
     margin: 0px auto;
