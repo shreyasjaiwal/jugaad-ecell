@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>JUGAAD'22</title>
+    <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" media="screen and (max-width: 1285px)" href="./css/phone.css">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&family=Inconsolata:wght@300&family=Josefin+Sans&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
@@ -15,6 +16,8 @@
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
       />
+      
+      <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 </head>
 
 <body >
@@ -42,6 +45,9 @@
                         <a class="nav-link active fw-semibold text-white" aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item nav-btn">
+                        <a class="nav-link active fw-semibold text-white" href="#certificate" >Certificates</a>
+                    </li>
+                    <li class="nav-item nav-btn">
                         <a class="nav-link active fw-semibold text-white" href="#about" >Jugaad</a>
                     </li>
                     <li class="nav-item nav-btn">
@@ -53,6 +59,7 @@
                     <li class="nav-item nav-btn">
                         <a class="nav-link active fw-semibold text-white" href="#sponsors" >Sponsors</a>
                     </li>
+                    
                     <li class="nav-item nav-btn">
                         <a class="nav-link active fw-semibold text-white" href="#contact" >Contact Us</a>
                     </li>
@@ -64,7 +71,7 @@
 
     <!-- home-section  -->
 
-    <div id="home">
+    <div id="home" >
 
         <div class="img">
             <img id="slide" src="./img/h1.png" width="384" height="480.78" class="animate__animated animate__fadeInLeft" />
@@ -82,16 +89,14 @@
                     ="#registration"><a href="#registration">Register Now</a> </button> -->
                 <!-- <button type="button" class="btn btn-outline-dark fw-semibold">Score-Board</button> -->
                 
-                <div class="wrap">
-                   <a href="#registration"><button class="Reg" >Register Now</button></a> 
-                  </div>
                   <div class="wrap-2" >
-                    <a href="./Notes_220918_084436.pdf"><button class="Reg-2" >Download Rule Book</button></a> 
+                      <a href="./Notes_220918_084436.pdf"><button class="Reg-2" >Download Rule Book</button></a> 
+                      <h2 class="fw-bold text-white" >On 16 2022 </h2>
                    </div>
-                <h2 class="fw-bold text-white" >On 16 2022 </h2>
+                   <div>
+                    <p class="fw-bold text-white">Download Certificate</p>
             </div>
-           
-
+        </div>
         </div>
 
         <div class="img ">
@@ -99,9 +104,32 @@
         </div>
 
     </div>
+
+</div>
+
+<!-- <div id="loading-message">Certificate is downloading...</div> -->
+<div style="display: flex; justify-content: center; align-items: center; flex-direction: column;" id="certificate">
+    <div >
+        <form style="height: min-content;" class="form">
+            <label for="name" class="label">Enter your name:</label>
+            <input type="text" id="name" name="name" required class="input" placeholder="letter limit is 18">
+            <button type="button" onclick="generateCertificate()" class="button">Generate Certificate</button>
+        </form>
+    </div>
+
+   
+<div id="certificate-container" class="certificate-container" style="display: none; ">
+    <div class="certificate">
+        <!-- Set the correct aspect ratio for the certificate image -->
+        <img src="template_cer.png" alt="Certificate Template" style="width: 100%; height: 100%;">
+        <div id="box">
+            <div id="name-container"></div>
+        </div>
+    </div>
+    <button id="download-btn" onclick="downloadCertificate()" class="button">Download Certificate</button>
 </div>
     <!-- about-section  -->
-<div class="about-section">
+<div class="about-section" style="margin-top: 1rem;">
     <div class="about animate__animated animate__fadeInLeftBig animate__slower" id="about" style=" color: black;">
         <div class="title fw-bold">About <p> Jugaad</p>
         </div>
@@ -307,6 +335,57 @@
             }
         });
     </script>
+    <!-- ... (previously provided HTML code) ... -->
+
+    <script>
+        function generateCertificate() {
+    const name = document.getElementById("name").value.trim().toUpperCase();
+
+    if (name === "") {
+        alert("Please enter your name.");
+        return;
+    }
+    const nameLimit = 18;
+    if (name.length > nameLimit) {
+        // Show the error message if the name exceeds the limit
+        document.getElementById("name-error").style.display = "block";
+        return;
+    } else {
+        // Hide the error message if the name is within the limit
+        document.getElementById("name-error").style.display = "none";
+        document.getElementById("name-container").innerText = name;
+    }
+
+    const nameContainer = document.getElementById("name-container");
+    nameContainer.innerText = name;
+
+    const certificateContainer = document.getElementById("certificate-container");
+    certificateContainer.style.display = "block";
+}
+
+function downloadCertificate() {
+    const name = document.getElementById("name").value.trim().toUpperCase();
+    const certificateContainer = document.querySelector(".certificate");
+
+    html2canvas(certificateContainer).then(function (canvas) {
+        // Convert the canvas image to a data URL
+        const dataURL = canvas.toDataURL("image/png");
+
+        // Create a temporary anchor element and set the download attribute
+        const link = document.createElement("a");
+        link.href = dataURL;
+        link.download = `${name}_certificate.png`;
+
+        // Trigger a click on the anchor element to initiate the download
+        link.click();
+    });
+}
+
+    </script>
+    
+<!-- ... (previously provided HTML code) ... -->
+
+    <script src="script.js"></script>
     
 </body>
 
